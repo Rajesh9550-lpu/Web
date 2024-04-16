@@ -1,0 +1,47 @@
+/* Enhanced styles for the navigation bar */
+.navbar {
+    background-color: #0084ff; /* Change background color to a blue shade */
+    padding: 20px 40px; /* Increase padding */
+    border-bottom: 2px solid #0056b3; /* Add border bottom */
+  }
+  
+  /* Remove default list styling from the navigation items */
+  .navbar-nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center; /* Vertically align items */
+  }
+  
+  /* Add spacing between navigation items */
+  .nav-item {
+    margin-left: 30px; /* Increase margin */
+  }
+  
+  /* Style the first navigation item */
+  .nav-item:first-child {
+    margin-left: 0;
+    width: 25%; /* Set width to cover 25% of the navbar */
+  }
+  
+  /* Push remaining navigation items to the right */
+  .nav-item:nth-child(n+2) {
+    margin-left: auto;
+  }
+  
+  /* Style the navigation links */
+  .nav-link {
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 18px; /* Increase font size */
+  }
+  
+  /* Add hover effect to navigation links */
+  .nav-link:hover {
+    color: #ddd;
+    text-decoration:none; /* Add underline on hover */
+  }
+  

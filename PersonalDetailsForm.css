@@ -1,0 +1,120 @@
+Container
+.user-details-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+  }
+  
+  /* Form Title */
+  .user-details-form-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  /* Form Groups */
+  .form-group {
+    margin-bottom: 30px;
+  }
+  
+  /* Labels */
+  label {
+    display: block;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 8px;
+  }
+  
+  /* Form Fields */
+  input[type="text"],
+  input[type="number"],
+  input[type="date"],
+  input[type="email"],
+  input[type="tel"],
+  textarea,
+  select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+  }
+  
+  /* Form Field Focus */
+  input:focus,
+  textarea:focus,
+  select:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  /* Buttons Container */
+  .buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Buttons */
+  .submit-button {
+    width: 50%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 40px;
+    margin-bottom: 10px; /* Add some gap between buttons */
+  }
+
+   .add-employer-button{
+    width: 46%;
+    height: 22px;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  .next-page-button{
+    width: 46%;
+    height: 22px;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 15px;
+    margin-bottom: 20px; /* Add some gap between buttons */
+  }
+  
+  /* Button Hover */
+  .submit-button:hover,
+  .next-page-button:hover,
+  .add-employer-button:hover {
+    background-color: #0056b3;
+  }
+ 
