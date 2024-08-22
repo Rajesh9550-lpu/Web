@@ -15,6 +15,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'  # Set Node.js version to 20
+
       - name: Install HTMLHint
         run: npm install -g htmlhint
 
@@ -32,7 +37,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16'
+          node-version: '20'  # Set Node.js version to 20
 
       - name: Install dependencies
         run: npm install
@@ -42,4 +47,3 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./ # assuming your site files are in the root directory
-
