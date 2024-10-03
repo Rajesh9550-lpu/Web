@@ -1,0 +1,299 @@
+{
+    "track_wizz" : {
+        "domain" : "https://apilive2.trackwizz.com",
+        "screen_api" : {
+            "publicKey" : "./src/assets/certificates/public/TrackWizz_certificate.pem",
+            "privateKey" : "./src/assets/certificates/private/privateKeyABC.pem",
+            "password" : "5pEa7HSCRdvJYmELadIjHg==",
+            "endpoint" : "/a87/screening",
+            "apiToken" : "mk5nhrevJsT7Uh8wQePVRiFqILt9FAjMFcAnUIKwNf0K38QRXkaVJap2snk7jnJtvOgMNXpfg22D/R8wVQYgcZARVQdjloiPyX7gAEB6y9iiTt3kF5mRfvDeloD0hKIhltotfarKarjLw4Uak7f4nUv8auERymWwvw9SKrTNzW0SNOcZ+FjLc6+lX3G8abgWSntLoULkv5SclTij4EFAEbcNHqm/pNu38e3lcwz8JaknawjmE46qJBhcPXjZAZrutXVQwEAoKLPOiREN40VlINjTBi3didpLdQ1xWxHkCIDlqNNjPw71ANgVyVlcrsb9DgUntUn2tgZFCbvUDUzJnyG8XDeunhHvHt8R5jWqdAvceBiz+W/cq8zFxK0BaBfqR2Yakekfv57PymoYE4HL14Ff0hYlqmwvL7W2aywtlVpOVos51QrbXg8VDXTUVGkp"
+        }
+    },
+    "karza" : {
+        "domain" : "https://api.karza.in",
+        "key" : "3ANkAQTWs7Q5hMmW0b5FbHN/akP6JrHiSfX4NRUBLVo=",
+        "electricity" : {
+            "endpoint" : "/v2/elec"
+        },
+        "ocr": {
+            "endpoint": "/v3/ocr-plus/kyc",
+            "key": "F35Nthu0UwCGxL9xc4LtqQ=="
+        }
+    },
+    "signzy" : {
+        "domain" : "https://preproduction.signzy.tech",
+        "digilocker" : {
+            "endpoint" : "/api/v2/patrons/64b95576971f240024995c2c/digilockers"
+        }
+    },
+    "crif": {
+        "domain": "https://sherlock.crifhighmark.com",
+        "credentials": {
+            "username" : "cpu2cpu@accreativecleantech.com",
+            "password" : "9xwFg9i2Q1MbdAsDLGV+BQ==",
+            "customerId" : "C2aX801lgzBKaPa9sM1RIQ==",
+            "accessCode" : "8mGxo2ABQVM83VG4lyMkhJ0LgvF5zgf1isZTkYaZtntQZwmXTfW4kTt+NhixttHQ"            
+        },
+        "async" : {
+            "endpoint" : "/FraudBoot/webservice/async"
+        },
+        "issue" : {
+            "endpoint" : "/FraudBoot/webservice/issue"
+        },
+        "decision-update" : {
+            "endpoint" : "/FraudBoot/webservice/Decision-update"
+        }
+    },
+    "onefin": {
+        "domain": "https://ecofy.onefin.in",
+        "credentials": {
+            "clientId" : "yM9VksHF4/NYDnamcmtcMZZciJqaLB8OKYYl8eIYpwNLz6uGuqbJ9Ch3/oXL6Xrn",
+            "clientSecret" : "qAmaWxX9rpmkjzoBn9WYCNxfU+FymCYQSuzO6tguPlb7/2NVuCxx5h382MVEXyUEdxviqBYKOxKIHVOgfr0yJzmJvPt+l4VKVX5cidpeQ6CNKXpWkAltxHpPwK9pv10LA6nWQeTllcO3YbeGcfwQsdBYKe4sBeSwmSqAonadKEdzf2pD+iax4kn1+DUVAS1a"                    
+        },
+        "ins_credentials": {
+            "clientId" : "yM9VksHF4/NYDnamcmtcMZZciJqaLB8OKYYl8eIYpwNLz6uGuqbJ9Ch3/oXL6Xrn",
+            "clientSecret" : "qAmaWxX9rpmkjzoBn9WYCNxfU+FymCYQSuzO6tguPlb7/2NVuCxx5h382MVEXyUEdxviqBYKOxKIHVOgfr0yJzmJvPt+l4VKVX5cidpeQ6CNKXpWkAltxHpPwK9pv10LA6nWQeTllcO3YbeGcfwQsdBYKe4sBeSwmSqAonadKEdzf2pD+iax4kn1+DUVAS1a"                    
+        },
+        "loan-booking": {
+            "POST": {
+                "endpoint": "/api/v1/client/loan/"
+            },
+            "PUT": {
+                "endpoint": "/api/v1/client/loan/{leadId}/"
+            },
+            "GET": {
+                "endpoint": "/api/v1/client/loan/{leadId}/"
+            }
+        },
+        "ckyc": {
+            "POST": {
+                "endpoint": "/api/v1/kyc/ckyc/composite/"
+            }
+        },
+        "enach-initiate" : {
+            "POST": {
+                "endpoint": "/api/v2/call/api/{leadId}/enach-initiate"
+            }
+        },
+        "esign-finbox" : {
+            "POST": {
+                "endpoint": "/api/v2/call/service/esign-finbox"
+            }
+        },
+        "upload-document" : {
+            "routeFunction" : "uploadDocument",
+            "POST": {
+                "endpoint": "/api/v1/client/line/{leadId}/upload-document/"
+            }
+        },
+        "generate-document" : {
+            "routeFunction" : "getBase64Response",
+            "POST": {
+                "endpoint": "/api/v1/client/loan/{leadId}/generate-document/"
+            }
+        },
+        "loan-detail": {
+            "POST": {
+                "endpoint":"/api/v2/call/api/loan-detail/"
+            }
+        },
+        "loan-listing": {
+            "POST": {
+                "endpoint":"/api/v2/call/api/loan-listing-v2/"
+            }
+        },
+        "loan-request-document": {
+            "routeFunction" : "loanRequestDocument",
+            "POST": {
+                "endpoint":"/api/v2/loan/loan_requests/{leadId}/documents/"
+            }
+        },
+        "pending-document-list": {
+            "POST": {
+                "endpoint": "/api/v2/call/api/pending-document-list/"
+            }
+        },
+        "kyc-check": {
+            "routeFunction" : "tpKYC",
+            "POST": {
+                "panVerify" : "/api/v2/call/service/karza-pan-detail-api/",
+                "onefinCKYC" : "/api/v1/kyc/ckyc/composite/",
+                "aadharConsent" : "/api/v2/call/service/aadhaar-consent/",
+                "generateOTP" : "/api/v2/call/service/generate-otp/"
+            }            
+        },
+        "verify-otp" : {
+            "POST": {
+                "endpoint": "/api/v2/call/service/get-aadhaar-file/"
+            }
+        },
+        "sherlock-callback" : {
+            "POST": {
+                "endpoint": "/api/v2/call/api/sherlock-callback/"
+            }
+        },
+        "upload-insurance" : {
+            "POST": {
+                "endpoint": "/api/v1/client/loan/{loanId}/upload-document/"
+            }
+        }
+    },
+    "gupshup": {
+        "domain": "https://enterprise.smsgupshup.com",
+        "credentials": {
+            "userid": "batjGBztxIQngOpeRjYNrg==",
+            "password": "N+QVgepBrDhibZZh6MzOrA=="
+        },
+        "version":"1.1",
+        "generate-otp": {            
+            "endpoint": "/GatewayAPI/rest"
+        },
+        "verify-otp": {
+            "endpoint": "/GatewayAPI/rest"
+        }
+    },
+    "hyperverge": {
+        "domain": "https://{subdomain}.hyperverge.co",
+        "credentials": {
+            "appId" : "7Oxakq3ahmaQKprFPAwWWQ==",
+            "appKey" : "kr4VUmKzT8sg+96nzlAswXnGgNXCHaiK3qr06zGzMnA="                    
+        },
+        "selfie-validation": {
+            "subdomain": "ind.idv",
+            "routeFunction" : "multipartForm",
+            "POST": {
+                "endpoint": "/v1/checkLiveness"
+            }
+        },
+        "onboarding": {
+            "subdomain": "ind.idv",
+            "POST": {
+                "endpoint": "/v1/link-kyc/start"
+            }
+        },
+        "ocr-pan": {
+            "subdomain": "ind-docs",
+            "routeFunction" : "multipartForm",
+            "POST": {
+                "endpoint":"/v2.0/readPAN"
+            }
+        },
+        "ocr-aadhar": {
+            "subdomain": "ind-docs",
+            "routeFunction" : "multipartForm",
+            "POST": {
+                "endpoint":"/v2.0/readAadhaar"
+            }
+        },
+        "face-match": {
+            "subdomain": "ind-faceid",
+            "routeFunction" : "multipartForm",
+            "POST": {
+                "endpoint":"/v1/photo/verifyPair"
+            }
+        },
+        "digilocker-consent": {
+            "subdomain": "ind-verify",
+            "POST": {
+                "endpoint":"/api/digilocker/start"
+            }
+        },
+        "digilocker-eaadhaar": {
+            "subdomain": "ind-verify",
+            "POST": {
+                "endpoint":"/api/digilocker/eAadhaarDetails"
+            }
+        },
+        "digilocker-epan": {
+            "subdomain": "ind-verify",
+            "POST": {
+                "endpoint":"/api/digilocker/docDetails"
+            }
+        },
+        "ckyc-validation": {
+            "subdomain": "ind-ckyc",
+            "routeFunction" : "ckycValidation",
+            "POST": {
+                "endpoint":"/api/v1/validate"
+            }
+        },
+        "api-results": {
+            "subdomain": "ind.idv",
+            "POST": {
+                "endpoint":"/v1/link-kyc/results"
+            }
+        },
+        "webhook-config": {
+            "subdomain": "review-api.idv",
+            "POST": {
+                "endpoint":"/api/v1/config"
+            },
+            "PUT": {
+                "endpoint":"/api/v1/config"
+            },
+            "GET": {
+                "endpoint":"/api/v1/config"
+            }
+        }
+    },
+    "crifInquiry": {
+        "domain": "https://hub.crifhighmark.com",
+        "TEST-FLG": "HMLIVE",
+        "credentials": {
+            "userId" : "padhav1@ecofy.co.in",
+            "password" : "Nf9qDKIGHjwc7ORJrFC5T7E5ltJBn7yMgB2jNcNhCns5/vmc9SsEi0GMUxKDWN4p",
+            "mbrid" : "/CCG3qUsgbrpqtFIsG9Anw==",
+            "subMbrid" : "ACCRETIVE CLEANTECH FINANCE PRIVATE LIMITED"            
+        },
+        "issue" : {
+            "endpoint" : "/Inquiry/Inquiry/CPUAction.action"
+        },
+        "issueStatus" : {
+            "endpoint" : "/Inquiry/Inquiry/CPUAction.action"
+        }
+    },
+    "kotak": {
+        "domain": "https://klicloudapi-prodgw.kotaklifeinsurance.com",
+        "credentials": {
+            "username" : "21NHd3JncB18tgriptMrenQruYfP6PkIbJJCJyU41KY=",
+            "password" : "xyKBoAwNZkr/gmhM4uWwkg=="                    
+        },
+        "auth": {            
+            "endpoint": "/services/Authentication.svc/NewAuthenticate"            
+        },
+        "premium": {
+            "endpoint": "/services/FIGService.svc/CalculatePrem"
+        },
+        "sendAppData": {
+            "endpoint": "/services/FIGService.svc/SendAppData"
+        },        
+        "coi": {
+            "domain": "https://klibus.mykotaklife.com",
+            "endpoint": "/FigServices/ValidateCOICSDetails.svc/ValidateCOICS",
+            "token": "o1ZpDkqlCAMKV5AgBcwegoEcNMqTvWQ34/F0eUIzVNyuHgI9rg8+V139h/1IXWcuBo7CiVlL5GI+LRCjZfaTg3N/akP6JrHiSfX4NRUBLVo="
+        }
+    },
+    "signzyRc" : {
+        "domain" : "https://api.signzy.app",
+        "token": "oA9SJEFYuzfwtWVxY2sX8glaHR8o8G4XIIR96MlWCf1zf2pD+iax4kn1+DUVAS1a",
+        "vehicleRc" : {
+            "endpoint" : "/api/v3/vehicle/detailedsearches"
+        }
+    },
+    "kotak-batch": {
+        "kotak": {
+            "coiUrl": "https://api.ecofy.co.in/kotak/coi",
+            "sendAppDataUrl": "https://api.ecofy.co.in/kotak/send-app-data"
+        }
+    },
+    "screenza": {
+        "domain": "https://ecofy.trackwizz.app/customerinfo/as501",
+        "credentials": {
+            "apikey": "mk5nhrevJsT7Uh8wQePVRiFqILt9FAjMFcAnUIKwNf242dyW4qQYowMMEhM3vw/34k3lryZZxGChHGWnHQbZChxqzX7a5RURQfwScXN54jIM/UxZNk/qpNsDOVMxmagnUPtNY8fsht8WUfu8/ZttvQXw3q5SSqVtjTeYY4aFuMaXiK+nSHGBz35svP78QYk4n3wI/2lwvICJ7HMBe82woUbTo/oI4bwwa3ZGvmAOGfvRhoVLb7YpNV08hp9CXFo+UgPuglU8fUkew/zgNeYzRJjs/F7kX57WEM/OQgFXWP3Agbwvpzoizkfxs1y1EwqX5ajTYz8O9QDYFclZXK7G/dWRy7ICyJLGmpCYkOdNMXlz2uMz70l/b1PgVEe/haCfRW7khqG4lJAUFPtS/2Fmh5PSDq4bf2nH9H5CMdAKYBWNJhMMHMXGncKpuDIX6IqS9TjIoV4BE9ZnkBMF80Scfg==",
+            "privateKey":"./src/assets/screenza/Certificates/Private/drlive2.pem",
+	        "publicKey":"./src/assets/screenza/Certificates/Public/PublicKey.cer",
+            "privateKeyPassword":"8hx5f80ozREwNkz8R3BLaA==",
+	        "requestId" : "TW123"
+        }
+    }
+}
